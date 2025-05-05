@@ -1,0 +1,180 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "DJ Profil";
+}
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>DJ Profil</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+        }
+
+        .grid-item {
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+            .grid-item button {
+                padding: 30px 50px;
+                font-size: 20px;
+                border: none;
+                background-color: #333;
+                color: white;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+                .grid-item button:hover {
+                    background-color: #555;
+                }
+
+        .profile-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 100;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            background-color: gold;
+            border-radius: 50%;
+            border: 5px solid black;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 101;
+        }
+
+        .dropdown {
+            margin-top: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 200;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+            .dropdown form {
+                margin: 0;
+            }
+
+            .dropdown button {
+                display: block;
+                width: 100%;
+                padding: 10px 20px;
+                background: none;
+                border: none;
+                text-align: left;
+                cursor: pointer;
+            }
+
+                .dropdown button:hover {
+                    background-color: #f0f0f0;
+                }
+
+        .hidden {
+            display: none;
+        }
+
+        .start-party {
+            background-color: #b3e5fc; /* svijetloplava */
+        }
+
+            .start-party button {
+                background-color: transparent;
+                color: #000;
+                font-size: 24px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+
+                .start-party button:hover {
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item start-party">
+            <form asp-action="StartParty" method="post" style="width: 100%; height: 100%;">
+                <button style="width: 100%; height: 100%;">Start a Party</button>
+            </form>
+        </div>
+
+        <div class="grid-item">
+            <form asp-action="PartyHistory">
+                <button>Party History</button>
+            </form>
+        </div>
+        <div class="grid-item">
+            <button disabled>Opcija uskoro...</button>
+        </div>
+        <div class="grid-item">
+            <form asp-action="Settings">
+                <button>Settings</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="profile-wrapper">
+        <button id="profileButton" class="profile-pic">DJ</button>
+        <div id="dropdownMenu" class="dropdown hidden">
+            <form asp-action="ChangePicture" method="post">
+                <button type="submit">Promijeni profilnu</button>
+            </form>
+            <form asp-action="Logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("profileButton");
+        const menu = document.getElementById("dropdownMenu");
+
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation(); // sprječava zatvaranje odmah
+            menu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>

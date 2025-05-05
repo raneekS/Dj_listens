@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Dobrodošli u DJ Listens";
+    Layout = null; // Uklanja layout da ne vuče bijelu marginu oko stranice
+}
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>DJ Listens - Odaberi ulogu</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+
+        .role-container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .role-half {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .dj-half {
+            background-color: #6a1b9a;
+        }
+
+        .party-half {
+            background-color: #1976d2;
+        }
+
+        .role-half:hover {
+            filter: brightness(1.1);
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            all: unset;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="role-container">
+        <form asp-action="ChooseRole" method="post">
+            <input type="hidden" name="role" value="dj" />
+            <button class="role-half dj-half">🎧 DJ</button>
+        </form>
+
+        <form asp-action="ChooseRole" method="post">
+            <input type="hidden" name="role" value="party" />
+            <button class="role-half party-half">🎉 PARTY MAN</button>
+        </form>
+    </div>
+</body>
+</html>

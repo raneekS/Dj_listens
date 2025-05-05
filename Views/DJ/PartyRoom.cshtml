@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Novi Party";
+    Layout = null;
+    var partyCode = ViewBag.PartyCode as string;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta charset="utf-8" />
+    <title>Start a Party</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #125ca1;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pokreni novi party</h2>
+
+        <form asp-action="ConfirmParty" method="post">
+            <label>Party name:</label>
+            <input name="PartyName" required />
+
+            <label>Party code:</label>
+            <input name="PartyCode" value="@partyCode" readonly />
+
+            <label>Location / Lokacija:</label>
+            <input name="Location" />
+
+            <label>Description:</label>
+            <textarea name="Description" rows="4"></textarea>
+
+            <button type="submit">Start a Party</button>
+        </form>
+    </div>
+
+</body>
+</html>

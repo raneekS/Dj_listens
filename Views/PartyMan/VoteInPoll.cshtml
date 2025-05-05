@@ -1,0 +1,76 @@
+﻿@model List<Dj_listens.Models.SongRequest>
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Glasaj za pjesmu";
+
+    string GetRandomColor()
+    {
+        var colors = new[] { "#ff6f61", "#6ec6ff", "#81c784", "#ffd54f", "#ff8a65", "#ba68c8" };
+        var random = new Random();
+        return colors[random.Next(colors.Length)];
+    }
+}
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta charset="utf-8" />
+    <title>Glasaj za pjesmu</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        form {
+            width: 50%;
+            height: 50%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .song-option {
+            width: 100%;
+            height: 100%;
+            border: none;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+            .song-option:active {
+                transform: scale(1.1);
+                background-color: #43a047 !important;
+            }
+    </style>
+</head>
+<body>
+
+    @foreach (var song in Model)
+    {
+        var color = GetRandomColor();
+
+        <form asp-action="SubmitVote" method="post">
+            <input type="hidden" name="songId" value="@song.Id" />
+            <button type="submit" class="song-option" style="background-color:@color;">
+                @song.SongName
+            </button>
+        </form>
+    }
+
+</body>
+</html>
