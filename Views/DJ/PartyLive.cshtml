@@ -1,30 +1,137 @@
-﻿@model List<Dj_listens.Models.SongRequest>
+﻿    @model List<Dj_listens.Models.SongRequest>
 
-@{
-    ViewData["Title"] = "Party Live";
-    Layout = null;
-}
+    @{
+        ViewData["Title"] = "Party Live";
+        Layout = null;
+    }
 
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta http-equiv="refresh" content="10">
-    <meta charset="utf-8" />
-    <title>Live Party</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 40px;
-            background-color: #f9f9f9;
-        }
+    <!DOCTYPE html>
+    <html lang="hr">
+    <head>
+        <meta http-equiv="refresh" content="10">
+        <meta charset="utf-8" />
+        <title>Live Party</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                padding: 40px;
+                background-color: #f9f9f9;
+            }
 
-        .top-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
+            .top-buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
 
-            .top-buttons button {
+                .top-buttons button {
+                    padding: 15px 25px;
+                    font-size: 16px;
+                    background-color: #1976d2;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+
+                    .top-buttons button:hover {
+                        background-color: #125ca1;
+                    }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            th {
+                background-color: #1976d2;
+                color: white;
+                padding: 15px;
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+
+            td {
+                padding: 15px;
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr:hover {
+                background-color: #e3f2fd;
+            }
+
+            .action-buttons button {
+                margin: 0 5px;
+                padding: 8px 12px;
+                font-size: 14px;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+                transition: background-color 0.2s;
+            }
+
+            .reject-btn {
+                background-color: #f44336;
+                color: white;
+            }
+
+                .reject-btn:hover {
+                    background-color: #d32f2f;
+                }
+            }
+        </style>
+            </head> 
+             <body>  
+
+        <div class="top-buttons">
+            <div style="display: flex; gap: 10px;">
+                <form asp-action="PickRandomSong" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-primary">🎲 Random Song</button>
+                </form>
+                <form asp-action="StartPoll" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-info">📊 Anketa</button>
+                </form>
+            </div>
+
+            <div style="text-align:center;">
+                <label style="font-weight:bold;">Kod partya:</label>
+                <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:5px;">
+                    <input type="text" id="partyCode" value="@ViewBag.PartyCode" readonly style="text-align:center; font-size:18px; width:200px; padding:5px; border:1px solid #ccc; border-radius:6px;">
+                    <button type="button" onclick="copyPartyCode()" style="padding:8px 12px; font-size:14px; background-color:#4caf50; color:white; border:none; border-radius:6px; cursor:pointer;">Kopiraj</button>
+                </div>
+            </div>
+
+            <form asp-action="StopParty" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger" style="margin-left: 20px;">🛑 Stop Party</button>
+            </form>
+        </div>
+
+        <script>
+            function copyPartyCode() {
+                var copyText = document.getElementById("partyCode");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                alert("Kod kopiran: " + copyText.value);
+            }
+        </script>
+
+        <style>
+            .top-buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            .btn {
                 padding: 15px 25px;
                 font-size: 16px;
                 background-color: #1976d2;
@@ -32,149 +139,73 @@
                 border: none;
                 border-radius: 6px;
                 cursor: pointer;
+                transition: background-color 0.3s;
             }
 
-                .top-buttons button:hover {
-                    background-color: #125ca1;
-                }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        th {
-            background-color: #1976d2;
-            color: white;
-            padding: 15px;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-
-        td {
-            padding: 15px;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #e3f2fd;
-        }
-
-        .action-buttons button {
-            margin: 0 5px;
-            padding: 8px 12px;
-            font-size: 14px;
-            cursor: pointer;
-            border: none;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        .reject-btn {
-            background-color: #f44336;
-            color: white;
-        }
-
-            .reject-btn:hover {
-                background-color: #d32f2f;
+            .btn-primary {
+                background-color: #007bff;
             }
-        }
-    </style>
-</head>
-<body>
 
-    <div class="top-buttons">
-        <form asp-action="PickRandomSong" method="post" style="display:inline;">
-            <button type="submit">🎲 Random Song</button>
-        </form>
-        <form asp-action="StopParty" method="post" style="display:inline;">
-            <button type="submit" style="background-color:red; color:white; padding:10px; border:none; border-radius:6px;">🛑 Stop Party</button>
-        </form>
+            .btn-info {
+                background-color: #17a2b8;
+            }
+
+            .btn-danger {
+                background-color: #dc3545;
+            }
+
+            .btn:hover {
+                background-color: #125ca1;
+            }
+        </style>
 
 
-        <div style="text-align:center;">
-            <label style="font-weight:bold;">Kod partya:</label>
-            <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top:5px;">
-                <input type="text" id="partyCode" value="@ViewBag.PartyCode" readonly style="text-align:center; font-size:18px; width:200px; padding:5px; border:1px solid #ccc; border-radius:6px;">
-                <button type="button" onclick="copyPartyCode()" style="padding:8px 12px; font-size:14px; background-color:#4caf50; color:white; border:none; border-radius:6px; cursor:pointer;">Kopiraj</button>
+
+
+
+ 
+
+        @if (TempData["RandomSong"] != null)
+        {
+            <div style="padding: 15px; background-color: #c8e6c9; color: #256029; margin-bottom: 20px; border-radius: 8px;">
+                @TempData["RandomSong"]
             </div>
-
-            @if (ViewBag.IsPollActive)
-            {
-                <div style="margin-top:20px; text-align:center;">
-                    <form asp-action="ClosePoll" method="post">
-                        <button style="padding:10px 20px; font-size:16px; background-color:#f44336; color:white; border:none; border-radius:6px; cursor:pointer;">
-                            🛑 Zatvori anketu
-                        </button>
-                    </form>
-                </div>
-            }
-        </div>
-
-
-
-
-        <form asp-action="StartPoll" method="post" style="display:inline;">
-            <button type="submit">📊 Anketa</button>
-        </form>
-    </div>
-
-    @if (TempData["RandomSong"] != null)
-    {
-        <div style="padding: 15px; background-color: #c8e6c9; color: #256029; margin-bottom: 20px; border-radius: 8px;">
-            @TempData["RandomSong"]
-        </div>
-    }
-
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Naziv pjesme</th>
-                <th>Broj glasova</th>
-                <th>Glasovi ankete</th>
-                <th>Akcije</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var song in Model.OrderByDescending(s => s.VoteCount))
-            {
-                <tr>
-                    <td>@song.Id</td>
-                    <td>@song.SongName</td>
-                    <td>@song.VoteCount</td>
-                    <td>@song.PollVotes</td>
-                    <td class="action-buttons">
-                        <form asp-action="RejectSong" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@song.Id" />
-                            <button class="reject-btn" type="submit">Odbaci</button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-
-
-
-    <script>
-        function copyPartyCode() {
-            var copyText = document.getElementById("partyCode");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-            navigator.clipboard.writeText(copyText.value);
-            alert("Kod kopiran: " + copyText.value);
         }
-    </script>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Naziv pjesme</th>
+                    <th>Broj glasova</th>
+                    <th>Glasovi ankete</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var song in Model.OrderByDescending(s => s.VoteCount))
+                {
+                    <tr>
+                        <td>@song.Id</td>
+                        <td>@song.SongName</td>
+                        <td>@song.VoteCount</td>
+                        <td>@song.PollVotes</td>
+                        <td class="action-buttons">
+                            <form asp-action="RejectSong" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@song.Id" />
+                                <button class="reject-btn" type="submit">Odbaci</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
 
 
-</body>
-</html>
+
+
+
+
+
+    </body>
+    </html>

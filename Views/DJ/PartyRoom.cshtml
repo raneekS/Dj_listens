@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="10">
     <meta charset="utf-8" />
     <title>Start a Party</title>
     <style>
@@ -70,10 +69,10 @@
             <input name="PartyCode" value="@partyCode" readonly />
 
             <label>Location / Lokacija:</label>
-            <input name="Location" />
+            <input name="Location" required />
 
             <label>Description:</label>
-            <textarea name="Description" rows="4"></textarea>
+            <textarea name="Description" rows="4" required></textarea>
 
             <button type="submit">Start a Party</button>
         </form>

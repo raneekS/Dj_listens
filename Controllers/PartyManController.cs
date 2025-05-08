@@ -113,7 +113,6 @@ namespace Dj_listens.Controllers
         }
 
         [HttpPost]
-        [HttpPost]
         public IActionResult SubmitVote(int songId)
         {
             var nickname = HttpContext.Session.GetString("Nickname");

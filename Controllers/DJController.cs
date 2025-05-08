@@ -2,6 +2,7 @@
 using Dj_listens.Models;
 using System.Text.RegularExpressions;
 using Microsoft.Data.Sqlite;
+using System.IO;
 
 
 namespace Dj_listens.Controllers
@@ -12,7 +13,7 @@ namespace Dj_listens.Controllers
 
 
 
-        private static List<DJ> DJs = new List<DJ>(); //lista za register(ne sprema se)
+        
 
         [HttpPost]
         public IActionResult Register(string username, string email, string password, string confirmPassword)
@@ -114,50 +115,61 @@ namespace Dj_listens.Controllers
             return View();
         }
 
-       
+
         [HttpPost]
         public IActionResult StartParty()
         {
             var code = GeneratePartyCode();
-            ViewBag.PartyCode = code;
-
-            // Spremi kod u session
             HttpContext.Session.SetString("CurrentPartyCode", code);
 
+            ViewBag.PartyCode = code;
+
+            // Vrati formu za unos podataka o partiju
             return View("PartyRoom");
         }
+
+
+
+
 
 
         [HttpPost]
         public IActionResult ConfirmParty(string PartyName, string PartyCode, string Location, string Description)
         {
+            // 1. Provjera unosa - sva polja moraju biti ispunjena
+            if (string.IsNullOrEmpty(PartyName) || string.IsNullOrEmpty(PartyCode) || string.IsNullOrEmpty(Location) || string.IsNullOrEmpty(Description))
+            {
+                TempData["Error"] = "Sva polja moraju biti ispunjena.";
+                return RedirectToAction("PartyRoom");
+            }
+
+            // 2. Dohvaćanje trenutnog DJ korisnika iz sesije
             var username = HttpContext.Session.GetString("dj_username");
             if (string.IsNullOrEmpty(username))
+            {
+                TempData["Error"] = "Niste prijavljeni. Molimo prijavite se.";
                 return RedirectToAction("LogReg");
-
-            int djId = -1;
+            }
 
             using (var connection = new SqliteConnection("Data Source=C:\\party_data\\party_app.db"))
             {
                 connection.Open();
 
-                // Prvo dohvatimo DJ-ev ID iz baze
+                // 3. Dohvati DJ ID
                 var getDjCommand = connection.CreateCommand();
                 getDjCommand.CommandText = @"SELECT Id FROM DJ WHERE Username = @username;";
                 getDjCommand.Parameters.AddWithValue("@username", username);
 
                 var result = getDjCommand.ExecuteScalar();
-                if (result != null)
-                {
-                    djId = Convert.ToInt32(result);
-                }
-                else
+                if (result == null)
                 {
                     TempData["Error"] = "Greška: DJ nije pronađen.";
                     return RedirectToAction("Profile");
                 }
 
-                // Sad unosimo Party
+                int djId = Convert.ToInt32(result);
+
+                // 4. Unos partya
                 var insertCommand = connection.CreateCommand();
                 insertCommand.CommandText = @"
             INSERT INTO Parties (PartyName, PartyCode, Location, Description, DjId, StartTime)
@@ -173,11 +185,30 @@ namespace Dj_listens.Controllers
                 insertCommand.ExecuteNonQuery();
             }
 
-            // Spremimo kod partya u Session
+            // 5. Spremi kod partya i idi na live
             HttpContext.Session.SetString("CurrentPartyCode", PartyCode);
-
+            TempData["Success"] = "Party uspješno pokrenut!";
             return RedirectToAction("PartyLive");
         }
+
+
+        public IActionResult PartyLive()
+        {
+            string currentCode = HttpContext.Session.GetString("CurrentPartyCode");
+
+            var songs = PartyManController.SongRequests
+                .Where(s => s.PartyCode == currentCode)
+                .ToList();
+
+            ViewBag.PartyCode = currentCode; // ✅ Postavljamo kod partya u ViewBag
+
+            return View(songs);
+        }
+
+
+
+
+
 
 
         [HttpPost]
@@ -222,9 +253,39 @@ namespace Dj_listens.Controllers
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        [HttpGet]
         public IActionResult PartyHistory()
         {
-            return Content("Ovdje će biti prikaz povijesti partija.");
+            List<PartyHistory> partyList = new List<PartyHistory>();
+
+            using (var connection = new SqliteConnection("Data Source=C:\\party_data\\party_app.db"))
+            {
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @"SELECT Id, PartyName, PartyCode, Location, Description, StartTime, EndTime 
+                                        FROM Parties 
+                                        ORDER BY StartTime DESC;";
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        partyList.Add(new PartyHistory
+                        {
+                            Id = reader.GetInt32(0),
+                            PartyName = reader.GetString(1),
+                            PartyCode = reader.GetString(2),
+                            Location = reader.GetString(3),
+                            Description = reader.GetString(4),
+                            StartTime = reader.GetDateTime(5),
+                            EndTime = reader.IsDBNull(6) ? null : reader.GetDateTime(6)
+                        });
+                    }
+                }
+            }
+
+            return View(partyList);
         }
 
         public IActionResult Settings()
@@ -309,11 +370,14 @@ namespace Dj_listens.Controllers
         }
 
 
-       
-
-
-
 
 
     }
 }
+
+
+
+
+
+    
+

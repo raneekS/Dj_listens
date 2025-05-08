@@ -122,6 +122,21 @@
                     background-color: rgba(255, 255, 255, 0.3);
                 }
 
+        .party-history { 
+            background-color: #ffccbc; /* svijetloružičasta */
+        }
+            .party-history button {
+                background-color: transparent;
+                color: #000;
+                font-size: 24px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+                .party-history button:hover {
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+
     </style>
 </head>
 <body>
@@ -133,10 +148,12 @@
             </form>
         </div>
 
-        <div class="grid-item">
-            <form asp-action="PartyHistory">
-                <button>Party History</button>
+        <div class="grid-item party-history">
+            <form asp-action="PartyHistory" method="get" style="width: 100%; height: 100%;">
+                <button style="width: 100%; height: 100%;">Party History</button>
+
             </form>
+
         </div>
         <div class="grid-item">
             <button disabled>Opcija uskoro...</button>
