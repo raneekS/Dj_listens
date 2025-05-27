@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dj_listens")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e30ddaa338aa841514e1d18e2c32ef219ac56235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63e95a956c2561ed608be15d9b1bfb118f8ecf25")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dj_listens")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dj_listens")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

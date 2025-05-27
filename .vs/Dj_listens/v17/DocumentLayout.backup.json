@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partylive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partylive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partyhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partyhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\controllers\\djcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:controllers\\djcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partyhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partyhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\models\\dj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:models\\dj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partyroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partyroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\models\\songrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:models\\songrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\logreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\logreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\models\\partyhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:models\\partyhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\controllers\\partymancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,40 +35,76 @@
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\entercode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\partyman\\sendsong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\sendsong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\models\\songrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:models\\songrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\partyman\\enterparty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\enterparty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\partyman\\voteinpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\voteinpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\partyman\\sendsong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\sendsong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\dj_listens.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:dj_listens.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\dj_listens.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:dj_listens.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partylive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partylive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\logreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\logreg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\partyroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\partyroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\dj\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\dj\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\partyman\\voteinpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\partyman\\voteinpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|c:\\users\\korisnik\\source\\repos\\dj_listens\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B31B0411-BDD6-45EF-B8CF-4874DEEF7D9B}|Dj_listens.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,176 +114,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PartyHistory.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyHistory.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\PartyHistory.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyHistory.cshtml",
-              "RelativeToolTip": "Views\\DJ\\PartyHistory.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T00:13:08.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Dj_listens.csproj",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Dj_listens.csproj",
-              "RelativeDocumentMoniker": "Dj_listens.csproj",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Dj_listens.csproj",
-              "RelativeToolTip": "Dj_listens.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-28T00:40:14.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "VoteInPoll.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\VoteInPoll.cshtml",
-              "RelativeDocumentMoniker": "Views\\PartyMan\\VoteInPoll.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\VoteInPoll.cshtml",
-              "RelativeToolTip": "Views\\PartyMan\\VoteInPoll.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T23:32:03.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EnterParty.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterParty.cshtml",
-              "RelativeDocumentMoniker": "Views\\PartyMan\\EnterParty.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterParty.cshtml",
-              "RelativeToolTip": "Views\\PartyMan\\EnterParty.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T21:38:31.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SongRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\SongRequest.cs",
-              "RelativeDocumentMoniker": "Models\\SongRequest.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\SongRequest.cs",
-              "RelativeToolTip": "Models\\SongRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Title": "DJ.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\DJ.cs",
+              "RelativeDocumentMoniker": "Models\\DJ.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\DJ.cs",
+              "RelativeToolTip": "Models\\DJ.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:05:17.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SendSong.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\SendSong.cshtml",
-              "RelativeDocumentMoniker": "Views\\PartyMan\\SendSong.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\SendSong.cshtml",
-              "RelativeToolTip": "Views\\PartyMan\\SendSong.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAD8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T00:00:11.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnterCode.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterCode.cshtml",
-              "RelativeDocumentMoniker": "Views\\PartyMan\\EnterCode.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterCode.cshtml",
-              "RelativeToolTip": "Views\\PartyMan\\EnterCode.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T23:59:50.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PartyManController.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\PartyManController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PartyManController.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\PartyManController.cs",
-              "RelativeToolTip": "Controllers\\PartyManController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:58:40.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PartyLive.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyLive.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\PartyLive.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyLive.cshtml*",
-              "RelativeToolTip": "Views\\DJ\\PartyLive.cshtml*",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T23:49:41.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PartyRoom.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyRoom.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\PartyRoom.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyRoom.cshtml",
-              "RelativeToolTip": "Views\\DJ\\PartyRoom.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAD8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T23:30:50.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T22:35:22.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LogReg.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\LogReg.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\LogReg.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\LogReg.cshtml",
-              "RelativeToolTip": "Views\\DJ\\LogReg.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T22:24:16.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T22:09:34.117Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Profile.cshtml",
-              "RelativeToolTip": "Views\\DJ\\Profile.cshtml",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAJwAAAAOAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Login.cshtml",
+              "RelativeToolTip": "Views\\DJ\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T22:19:52.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T22:29:16.516Z"
             },
             {
               "$type": "Document",
@@ -265,75 +148,286 @@
               "RelativeDocumentMoniker": "Controllers\\DJController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\DJController.cs",
               "RelativeToolTip": "Controllers\\DJController.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAADwv84AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAIwPAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T22:11:07.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T22:11:07.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Login.cshtml",
-              "RelativeToolTip": "Views\\DJ\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PartyHistory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyHistory.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\PartyHistory.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyHistory.cshtml",
+              "RelativeToolTip": "Views\\DJ\\PartyHistory.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T22:29:16.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\DJ\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Register.cshtml",
-              "RelativeToolTip": "Views\\DJ\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T22:18:31.104Z",
+              "WhenOpened": "2025-05-08T00:13:08.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DJ.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\DJ.cs",
-              "RelativeDocumentMoniker": "Models\\DJ.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\DJ.cs",
-              "RelativeToolTip": "Models\\DJ.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "SongRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\SongRequest.cs",
+              "RelativeDocumentMoniker": "Models\\SongRequest.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\SongRequest.cs",
+              "RelativeToolTip": "Models\\SongRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T22:09:34.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T00:05:17.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
+              "Title": "PartyHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\PartyHistory.cs",
+              "RelativeDocumentMoniker": "Models\\PartyHistory.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\PartyHistory.cs",
+              "RelativeToolTip": "Models\\PartyHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:54:35.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PartyManController.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\PartyManController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PartyManController.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\PartyManController.cs",
+              "RelativeToolTip": "Controllers\\PartyManController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowF8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:58:40.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnterCode.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterCode.cshtml",
+              "RelativeDocumentMoniker": "Views\\PartyMan\\EnterCode.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterCode.cshtml",
+              "RelativeToolTip": "Views\\PartyMan\\EnterCode.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T23:59:50.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnterParty.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterParty.cshtml",
+              "RelativeDocumentMoniker": "Views\\PartyMan\\EnterParty.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\EnterParty.cshtml",
+              "RelativeToolTip": "Views\\PartyMan\\EnterParty.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv1YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T21:38:31.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SendSong.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\SendSong.cshtml",
+              "RelativeDocumentMoniker": "Views\\PartyMan\\SendSong.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\SendSong.cshtml",
+              "RelativeToolTip": "Views\\PartyMan\\SendSong.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T00:00:11.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T10:21:34.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T17:15:59.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T17:15:59.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PartyHub.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Hubs\\PartyHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\PartyHub.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Hubs\\PartyHub.cs",
+              "RelativeToolTip": "Hubs\\PartyHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:45:10.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T22:35:22.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dj_listens.csproj",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Dj_listens.csproj",
+              "RelativeDocumentMoniker": "Dj_listens.csproj",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Dj_listens.csproj",
+              "RelativeToolTip": "Dj_listens.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-28T00:40:14.014Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "PartyLive.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyLive.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\PartyLive.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyLive.cshtml",
+              "RelativeToolTip": "Views\\DJ\\PartyLive.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAIwNIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T23:49:41.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:12:05.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T17:12:05.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:54:22.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PartyRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyRoom.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\PartyRoom.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\PartyRoom.cshtml",
+              "RelativeToolTip": "Views\\DJ\\PartyRoom.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T23:30:50.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LogReg.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\LogReg.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\LogReg.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\LogReg.cshtml",
+              "RelativeToolTip": "Views\\DJ\\LogReg.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T22:24:16.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Profile.cshtml",
+              "RelativeToolTip": "Views\\DJ\\Profile.cshtml",
+              "ViewState": "AgIAAKIAAAAAAAAAAADwv8IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T22:19:52.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\DJ\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\DJ\\Register.cshtml",
+              "RelativeToolTip": "Views\\DJ\\Register.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T22:18:31.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T00:50:53.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VoteInPoll.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\VoteInPoll.cshtml",
+              "RelativeDocumentMoniker": "Views\\PartyMan\\VoteInPoll.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\PartyMan\\VoteInPoll.cshtml",
+              "RelativeToolTip": "Views\\PartyMan\\VoteInPoll.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T23:32:03.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T10:40:24.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Korisnik\\source\\repos\\Dj_listens\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T11:02:56.408Z"
             }
           ]
         },

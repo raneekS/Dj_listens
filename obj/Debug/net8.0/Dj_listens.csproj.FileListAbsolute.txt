@@ -60,3 +60,4 @@ C:\Users\Korisnik\source\repos\Dj_listens\bin\Debug\net8.0\runtimes\win-x86\nati
 C:\Users\Korisnik\source\repos\Dj_listens\obj\Debug\net8.0\Dj_listens.csproj.AssemblyReference.cache
 C:\Users\Korisnik\source\repos\Dj_listens\obj\Debug\net8.0\Dj_listens.csproj.Up2Date
 C:\Users\Korisnik\source\repos\Dj_listens\obj\Debug\net8.0\Dj_listens.sourcelink.json
+C:\Users\Korisnik\source\repos\Dj_listens\bin\Debug\net8.0\Newtonsoft.Json.dll

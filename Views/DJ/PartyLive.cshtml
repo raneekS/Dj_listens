@@ -8,7 +8,7 @@
     <!DOCTYPE html>
     <html lang="hr">
     <head>
-        <meta http-equiv="refresh" content="10">
+        <meta http-equiv="refresh" content="30">
         <meta charset="utf-8" />
         <title>Live Party</title>
         <style>
@@ -99,6 +99,15 @@
                     <button type="submit" class="btn btn-info">📊 Anketa</button>
                 </form>
             </div>
+        <div style="margin-top:20px; text-align:center;">
+            <form asp-action="ClosePoll" method="post">
+                @Html.AntiForgeryToken()
+                <button style="padding:10px 20px; font-size:16px; background-color:#f44336; color:white; border:none; border-radius:6px; cursor:pointer;">
+                    🛑 Zatvori anketu
+                </button>
+            </form>
+        </div>
+
 
             <div style="text-align:center;">
                 <label style="font-weight:bold;">Kod partya:</label>
@@ -200,9 +209,6 @@
                 }
             </tbody>
         </table>
-
-
-
 
 
 

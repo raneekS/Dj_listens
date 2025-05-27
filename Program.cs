@@ -1,15 +1,18 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Dj_listens.Hubs; // Dodaj namespace gdje je PartyHub
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+
+// Dodaj servise u kontejner
 builder.Services.AddControllersWithViews();
-builder.Services.AddSession(); // ✅ dodano za Session
+builder.Services.AddSession();
+builder.Services.AddSignalR(); // Dodaj SignalR servis
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Konfiguracija HTTP pipeline-a
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Home/ErrorRedirect"); // Tvoja custom error stranica
     app.UseHsts();
 }
 
@@ -18,12 +21,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession(); // ✅ omogućeno Session korištenje
+app.UseSession();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Mapiraj SignalR hub
+app.MapHub<PartyHub>("/partyHub");
 
 app.Run();

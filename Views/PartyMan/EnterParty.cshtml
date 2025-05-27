@@ -83,14 +83,22 @@
 
         <form asp-action="EnterParty" method="post">
             <label>Party kod:</label>
-            <input name="partyCode" required />
+            <input name="partyCode" autocomplete="off" />
+
 
             <label>Nickname:</label>
             <input name="nickname" required />
 
             <button type="submit">Nastavi</button>
         </form>
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="error-message">@TempData["Error"]</div>
+        }
     </div>
+
+   
 
 </body>
 </html>

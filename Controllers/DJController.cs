@@ -3,14 +3,18 @@ using Dj_listens.Models;
 using System.Text.RegularExpressions;
 using Microsoft.Data.Sqlite;
 using System.IO;
+using Dj_listens.Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 
 namespace Dj_listens.Controllers
 {
+
     public class DJController : Controller
     {
         private static List<Dj_listens.Models.SongRequest> SongRequests = Dj_listens.Controllers.PartyManController.SongRequests;
 
+        
 
 
         
@@ -125,10 +129,14 @@ namespace Dj_listens.Controllers
             ViewBag.PartyCode = code;
 
             // Vrati formu za unos podataka o partiju
-            return View("PartyRoom");
+            return RedirectToAction("PartyRoom");
         }
 
 
+        private bool IsLoggedIn()
+        {
+            return !string.IsNullOrEmpty(HttpContext.Session.GetString("dj_username"));
+        }
 
 
 
@@ -204,15 +212,39 @@ namespace Dj_listens.Controllers
 
             return View(songs);
         }
+        [HttpGet]
+        public IActionResult PartyRoom()
+        {
+            var partyCode = HttpContext.Session.GetString("CurrentPartyCode");
+            if (string.IsNullOrEmpty(partyCode))
+                return RedirectToAction("Profile"); // ili ChooseRole ako nije prijavljen
 
+            ViewBag.PartyCode = partyCode;
+            return View();
+        }
 
+        [HttpPost]
+        public IActionResult DeleteAllHistory()
+        {
+            using (var connection = new SqliteConnection("Data Source=C:\\party_data\\party_app.db"))
+            {
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = "DELETE FROM Parties;";
+                command.ExecuteNonQuery();
+            }
+
+            TempData["Success"] = "Povijest partija je uspješno obrisana.";
+            return RedirectToAction("PartyHistory");
+        }
 
 
 
 
 
         [HttpPost]
-        public IActionResult StopParty()
+        public async Task<IActionResult> StopParty([FromServices] IHubContext<PartyHub> hubContext)
         {
             var partyCode = HttpContext.Session.GetString("CurrentPartyCode");
             if (string.IsNullOrEmpty(partyCode))
@@ -234,7 +266,8 @@ namespace Dj_listens.Controllers
                 updateCommand.ExecuteNonQuery();
             }
 
-            // Očistimo Session jer party je završen
+            await hubContext.Clients.Group(partyCode).SendAsync("PartyEnded");
+
             HttpContext.Session.Remove("CurrentPartyCode");
 
             TempData["PollClosed"] = "Party je uspješno završen!";
@@ -296,9 +329,10 @@ namespace Dj_listens.Controllers
         [HttpPost]
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear();
-            return RedirectToAction("Index", "Home");
+            HttpContext.Session.Clear(); 
+            return RedirectToAction("Index", "Home"); // 🔹 vrati na početnu stranicu
         }
+
 
         [HttpPost]
         public IActionResult ChangePicture()
@@ -359,15 +393,16 @@ namespace Dj_listens.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult ClosePoll()
         {
             DJController.CurrentPollSongs.Clear();
             PartyManController.VotedNicknames.Clear();
 
             TempData["PollClosed"] = "Anketa je uspješno zatvorena.";
-
             return RedirectToAction("PartyLive");
         }
+
 
 
 

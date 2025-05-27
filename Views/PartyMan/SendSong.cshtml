@@ -1,12 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Pošalji pjesmu DJ-u";
     Layout = null;
+    var mySongs = ViewBag.MySongs as List<Dj_listens.Models.SongRequest>;
 }
 
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="refresh" content="50">
     <meta charset="utf-8" />
     <title>Pošalji pjesmu</title>
     <style>
@@ -26,7 +27,7 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            width: 400px;
+            width: 450px;
         }
 
         h2 {
@@ -64,7 +65,32 @@
             button:hover {
                 background-color: #125ca1;
             }
+
+        .song-table {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e3f2fd;
+        }
     </style>
+    <meta http-equiv="Cache-Control" content="no-store" />
+
 </head>
 <body>
 
@@ -72,9 +98,6 @@
         <h2>Pošalji pjesmu DJ-u</h2>
 
         <form asp-action="SendSong" method="post">
-            <label>Naziv pjesme:</label>
-            <input name="SongName" required />
-
             <label>YouTube URL:</label>
             <input name="YoutubeUrl" required />
 
@@ -83,11 +106,66 @@
 
             <button type="submit">Pošalji</button>
         </form>
+        <form asp-action="LeaveParty" method="post">
+            <button type="submit" style="margin-top: 20px; background-color: red;">Napusti party</button>
+        </form>
 
-       
 
+
+        @if (mySongs != null && mySongs.Count > 0)
+        {
+            <h3 style="margin-top: 30px;">Tvoje poslane pjesme</h3>
+            <div class="song-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naziv pjesme</th>
+                            <th>Opis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var song in mySongs)
+                        {
+                            <tr>
+                                <td>@song.SongName</td>
+                                <td>@song.Description</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
 
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script>
+        // Kreiraj konekciju na PartyHub
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/partyHub")
+            .build();
+
+        // Dobij kod partya iz sessiona preko Razor sintakse
+        const partyCode = '@ViewBag.PartyCode';
+
+        connection.start()
+            .then(() => {
+                console.log("SignalR connected");
+                return connection.invoke("JoinPartyGroup", partyCode);
+            })
+            .catch(err => console.error(err.toString()));
+
+        // Slušaj event PartyEnded
+        connection.on("PartyEnded", () => {
+            alert("Party je završen! Ne možete više slati pjesme.");
+            // Onemogući formu za slanje pjesme
+            const form = document.querySelector('form[asp-action="SendSong"]');
+            if (form) {
+                form.querySelectorAll('input, textarea, button').forEach(el => el.disabled = true);
+            }
+        });
+    </script>
+
 
 </body>
 </html>
